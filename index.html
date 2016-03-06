@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>BackonJS Blogroll App</title>
+</head>
+<body>
+	<div id="container">
+		<h1>BackbonJS Blogoll App</h1>
+		<table class="table">
+			<tr>
+				<th>Author</th>
+				<th>Title</th>
+				<th>URL</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td><input type="text" class="form-control author-input"></td>
+				<td><input type="text" class="form-control author-title"></td>
+				<td><input type="text" class="form-control author-url"></td>
+				<td><button class="btn btn-primary add-blog">Add</button></td>
+			</tr>
+			<tbody class="blogs-list"></tbody>
+		</table>
+	</div>	
+	<script type="text/html" class="blogs-list-template">
+		<td>
+			<span class="author">
+			<%= author %>
+			</span>
+		</td>
+		<td>
+			<span class="title">
+			<%= title %>
+			</span>
+		</td>
+		<td>
+			<span class="url">
+			<%= url %>
+			</span>
+		</td>
+		<td>
+			<button class="btn btn-warning edit-blog">Edit</button>
+			<button class="btn btn-danger edit-blog">Delete</button>
+		</td>
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.1/backbone-min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
