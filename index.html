@@ -16,8 +16,8 @@
 			</tr>
 			<tr>
 				<td><input type="text" class="form-control author-input"></td>
-				<td><input type="text" class="form-control author-title"></td>
-				<td><input type="text" class="form-control author-url"></td>
+				<td><input type="text" class="form-control title-input"></td>
+				<td><input type="text" class="form-control url-input"></td>
 				<td><button class="btn btn-primary add-blog">Add</button></td>
 			</tr>
 			<tbody class="blogs-list"></tbody>
@@ -41,7 +41,9 @@
 		</td>
 		<td>
 			<button class="btn btn-warning edit-blog">Edit</button>
-			<button class="btn btn-danger edit-blog">Delete</button>
+			<button class="btn btn-danger delete-blog">Delete</button>
+			<button class="btn btn-success update-blog" style="display:none">Update</button>
+			<button class="btn btn-danger cancel" style="display:none">Cancel</button>
 		</td>
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
